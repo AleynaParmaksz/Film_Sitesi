@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feministler onlar ne düşünüyor?</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Feministler onlar ne düşünüyor?</span></h2>
+            <p>
+                1970'li yıllarda çekilen ve feminist uyanışı yansıtan kadın fotoğraflarını tekrar ele alan bu film, o kadınların hayatını ve devam eden değişim ihtiyacını inceliyor. Jane Fonda, Lily Tomlin, Michelle Phillips ve diğer kadınlar, öykülerini Johanna Demetrakas'ın belgeselinde paylaşıyor. ...                
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt=""> İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="BirdBox.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

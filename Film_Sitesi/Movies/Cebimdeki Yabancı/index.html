@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebimdeki Yabancı</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Cebimdeki Yabancı</span></h2>
+            <p>
+                Cebimdeki Yabancı, yemek için bir araya gelen yedi yakın arkadaşın, başlattıkları bir oyun sonrası arapsaçına dönen ilişkilerini konu ediniyor. Yedi eski arkadaş akşam yemeğinde bir araya gelir ve yemek boyunca bir oyun oynamaya karar verir.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="you.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

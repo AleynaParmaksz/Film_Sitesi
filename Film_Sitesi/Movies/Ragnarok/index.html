@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragnarok</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Ragnarok</span></h2>
+        <p>
+            Dizi, küçük bir kasabaya taşınan Edda adında ki çocuğun başına gelenleri anlatıyor. Bu kasabada ılık geçen kışlar, aşırı şiddetli yağmurlar çok normal. Kasabanın nüfusu ise iklim değişikliklerinden çok mağdurlar ve bir kıyamet sinyali olarak görüyorlar. Bu hadiseleri Ragnarok olarak betimliyorlar.
+         </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Ragnarok.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

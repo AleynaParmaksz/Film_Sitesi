@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyori's Bed & Breakfast</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Hyori's Bed & Breakfast</span></h2>
+            <p>
+                Güney Kore'nin tanınmış şarkıcısı olan Hyori evlendikten sonra eşiyle birlikte Jeju Adası'na yerleşir. Halk ikilinin yaşamını çok merak ettiği için çift evini pansiyona çevirerek misafirlere evlerinin ve yaşamlarının kapısını açar.
+                                
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="AşkveGurur.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

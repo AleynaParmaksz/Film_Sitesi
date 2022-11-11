@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denizlerdeki Komplo</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Denizlerdeki Komplo</span></h2>
+            <p>
+                Seaspiracy belgeseli, yönetmen Ali Tabrizi ve yardımcısı Lucy Tabrizi'nin okyanus yaşamını tehdit eden küresel tehlikeyi ortaya koymasını konu alıyor. Netflix'e göre film yapımcıları, okyanusları tehdit eden tehlikeleri birbirlerine bağlayan “Alarm Niteliğinde Bir Küresel Komplo” keşfediyorlar.
+
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="BirdBox.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

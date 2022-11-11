@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ToyStory.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Toy <span>Story</span></h2>
+            <p>
+                Oyuncak Hikayesi'nde Andy oyuncak koleksiyonu yapmayı çok seven ve oyuncaklarına değer veren küçük bir çocuktur. ... Bu da Andy'nin yokluğunda, oyuncaklarının kovboy Woody'nin önderliğinde hayata geldiğidir. Bir gün Andy güzel bir hediye alır. Bu hediye de son model bir oyuncak olan Buzz-lightyear'dır.
+
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="YourHonor.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

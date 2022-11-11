@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCO</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>COCO</span></h2>
+            <p>
+                Coco, 12 yaşındaki Miguel'in ölüler diyarındaki macerasını anlatıyor. 12 yaşındaki Miguel'in en büyük kahramanı efsanevi Meksikalı gitarist Ernesto de la Cruz'dur. Ancak Cruz hayatını kaybetmiştir ve Miguel'in onunla tanışma imkanı yoktur. ... Ancak gitarı çalması onu bir anda Ölüler Diyarı'na götürüverir.
+                                                             
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="AşkveGurur.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

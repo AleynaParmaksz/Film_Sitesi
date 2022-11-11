@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakkaranın Sırları</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Sakkaranın Sırları</span></h2>
+            <p>
+                Sakkara'nın Sırları, son elli yılın en büyük arkeolojik keşfinin sırlarını ortaya çıkarıyor. Arkeologlardan oluşan bir ekip, daha önce kimsenin keşfetmediği geçitleri, lahitleri ve mezarları kazar. Ekip elde ettiği bulgularla, Mısır'ın son 50 yıldaki en önemli buluşunun sırlarını gözler önüne seriyor.
+                                
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt=""> İZLE</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="BirdBox.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
