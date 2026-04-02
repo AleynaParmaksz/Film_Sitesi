@@ -1,2 +1,2 @@
 # Film_Sitesi
- Özgün bir film sitesi 
+Netflix konseptli film sitesi yapılmıştır.
